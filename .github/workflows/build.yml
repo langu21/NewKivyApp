@@ -8,7 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/cache@v2 → actions/cache@v4
+     - uses: actions/upload-artifact@v2 → actions/upload-artifact@v3
 
       # used to cache dependencies with a timeout
       - name: Get Date
